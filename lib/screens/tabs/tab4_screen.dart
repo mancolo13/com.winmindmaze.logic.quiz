@@ -8,7 +8,7 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('WinMindMaze • Rank')),
+      appBar: AppBar(title: const Text('Win • Rank')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
