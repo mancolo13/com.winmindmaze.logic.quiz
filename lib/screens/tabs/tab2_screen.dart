@@ -22,10 +22,10 @@ class _Tab2ScreenState extends State<Tab2Screen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _chip('All', 0),
-              _chip('Active', 1),
-              _chip('Hot', 2),
-              _chip('Saved', 3),
+              _chip('Sudoku Pro', 0),
+              _chip('Logic Grid', 1),
+              _chip('Spatial 3D', 2),
+              _chip('Riddles', 3),
             ],
           ),
           const SizedBox(height: 16),
@@ -47,7 +47,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Daily Record #${i + 201}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                      Text(const ['Quantum Maze Level 18', 'Nonogram Masterpiece', 'Pattern Matrix Puzzle', 'Einstein Riddle 14', 'Tower of Hanoi Extreme'][i % 5], style: const TextStyle(fontWeight: FontWeight.bold)),
                       Text('Stage ${i + 1} • Verified status', style: const TextStyle(fontSize: 12, color: Colors.white60)),
                     ],
                   ),

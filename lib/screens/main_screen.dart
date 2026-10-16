@@ -16,9 +16,9 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
+    Tab3Screen(),
     Tab1Screen(),
     Tab2Screen(),
-    Tab3Screen(),
     Tab4Screen(),
   ];
 
@@ -33,6 +33,11 @@ class _MainScreenState extends State<MainScreen> {
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
         NavigationDestination(
+          icon: const Icon(Icons.emoji_events_outlined),
+          selectedIcon: const Icon(Icons.emoji_events, color: AppTheme.primaryColor),
+          label: 'Quests',
+        ),
+        NavigationDestination(
           icon: const Icon(Icons.extension_outlined),
           selectedIcon: const Icon(Icons.extension, color: AppTheme.primaryColor),
           label: 'Puzzles',
@@ -43,16 +48,10 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Daily',
         ),
         NavigationDestination(
-          icon: const Icon(Icons.emoji_events_outlined),
-          selectedIcon: const Icon(Icons.emoji_events, color: AppTheme.primaryColor),
-          label: 'Quests',
-        ),
-        NavigationDestination(
           icon: const Icon(Icons.leaderboard_outlined),
           selectedIcon: const Icon(Icons.leaderboard, color: AppTheme.primaryColor),
           label: 'Rank',
         ),
-
         ],
       ),
     );
